@@ -35,5 +35,7 @@ class App < Sinatra::Base
     
     "#{@words}"
   end 
+  
+  get 
 
 end
