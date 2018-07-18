@@ -42,11 +42,11 @@ class App < Sinatra::Base
     @operation = params[:operation]
     if @operation == "*"
       @answer = @number1 * @number2 
-    if @operation == "+"
+    elsif @operation == "+"
       @answer = @number1 + @number2
-    if @operation == "-"
+    elsif @operation == "-"
       @answer = @number1 - @number2
-    if @operation == "/"
+    elsif @operation == "/"
       @answer = @number1 / @number2
     "The answer is #{@answer}."
   end 
