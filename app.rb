@@ -22,7 +22,7 @@ class App < Sinatra::Base
     @phrase = params[:phrase]
     @sentence = @phrase * @number 
     
-  "#{@sentence}"
+  "#{@sentence}."
   end 
   
   get '/say/:word1/:word2/:word3/:word4/:word5' do
@@ -33,7 +33,7 @@ class App < Sinatra::Base
     @word5 = params[:word5]
     @words = @word1 + " " + @word2 + " " + @word3 + " " + @word4 + " " + @word5
     
-    "#{@words}"
+    "#{@words}."
   end 
   
   get '/:operation/:number1/:number2' do 
@@ -41,6 +41,6 @@ class App < Sinatra::Base
     @number2 = params[:number2].to_i
     @product = @number1 * @number2
     
-    "The product is #{@product}"
+    "The product is #{@product}."
   end 
 end
