@@ -36,6 +36,7 @@ class App < Sinatra::Base
     "#{@words}"
   end 
   
-  get 
+  get '/:operation/:number1/:number2' do 
+    
 
 end
