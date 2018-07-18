@@ -43,6 +43,8 @@ class App < Sinatra::Base
     if @operation == "*"
       @answer = @number1 * @number2 
     if @operation == "+"
+      @answer = @number1 + @number2
+    if @operation == "-"
       
     "The product is #{@product}."
   end 
