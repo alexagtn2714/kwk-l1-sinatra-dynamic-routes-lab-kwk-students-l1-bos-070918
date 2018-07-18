@@ -48,7 +48,7 @@ class App < Sinatra::Base
       @answer = @number1 - @number2
     # elsif @operation == "/"
     #   @answer = @number1 / @number2
+   end
     "The answer is #{@answer}."
-  end 
 end 
 end
